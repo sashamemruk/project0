@@ -1,0 +1,384 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.body{
+
+
+}
+
+
+/* =================== header ========================= */
+
+.header {
+  /* height: 25px;
+
+  background-color: rgb(180, 70, 70);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5px;
+  box-shadow: 0px 0px 29px 7px rgb(122, 42, 42);
+   */
+  padding: 0;  
+  margin: 0; 
+  height: 50px;  
+  display: flex;  
+  flex-direction: row;  
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  background-color:#c76c5f;
+  box-shadow: 0px 0px 29px 7px#c76c5f;
+}
+
+/* ----------- logo --------------------- */
+.logo {
+  height: 20px;
+  width: 60px;
+  position: relative;
+  cursor: pointer;
+  margin-right: 140px;
+}
+.logoIcon {
+  position: absolute;
+  height: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ----------------------- navigation ------------------------ */
+.navigationList {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  /* background-color: teal; */
+}
+.navLink {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 60px;
+}
+
+.navLink a {
+  padding: 10px;
+  width: 100px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.activeLink {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+
+}
+
+.menu{
+  padding: 0;  
+  margin: 0; 
+  height: 50px;  
+  display: flex;  
+  flex-direction: row;  
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+.menu li a {
+color: rgb(0, 0, 0);
+text-decoration: none;
+align-self: center;
+font-size: 20px;
+padding: 10px 15px;
+transition: beckground .2s linear;
+}
+
+.menu li a:hover{
+  background: rgb(8, 4, 4) ;
+  border-radius: 3px;
+}
+
+.wrapper {
+background: #ffffff;
+
+}
+/* ---------------------- cart -------------------------------- */
+.rightMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 120px;
+}
+.headerCart {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  margin: 0 10px;
+}
+.headerCartIMG {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+
+}
+
+/* 
+
+.cards{
+  display: flex;
+  justify-content: center;
+  
+  margin-left: auto;
+  margin-right: auto
+
+}
+
+.card{
+  display: table-cell;
+  margin-right: 25px;
+  margin-left:25px ;
+  margin-top: 60px;
+} */
+
+.section{
+  display: flex;
+  justify-content: center;
+  background-color: #d7dee4;
+}
+
+.product-item {
+  width: 300px;
+  text-align: center;
+  margin: 0 auto;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  background: rgb(0, 0, 0);
+  font-family: "Open Sans";
+  transition: .3s ease-in;
+  margin-top: 60px;
+  margin-left: 30px;
+  margin-right: 30px;
+  box-shadow: 0px 0px 10px 2px#c76c5f;
+}
+.product-item:hover {border-bottom: 2px solid #c76c5f;}
+.product-item img {
+  display: block;
+  width: 100%;
+}
+.product-list {
+  background: #fafafa;
+  padding: 15px 0;
+  
+}
+.product-list h3 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+  margin: 0 0 10px 0;
+}
+.price {
+  font-size: 20px;
+  color: #000000;
+  display: block;
+  margin-bottom: 12px;
+}
+.button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 12px;
+  background: #000000;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 28px;
+  transition: .3s ease-in;
+}
+.product-item:hover .button {background: #c76c5f;}
+
+
+
+
+/* .borderLine {
+  width: 3px;
+  height: 30px;
+  border-radius: 1px;
+  background-color: white;
+} */
+
+
+/* ------------------------user ------------------------------ */
+
+.user {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.userIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 13px;
+  width: 13px;
+}
+
+.activeUser {
+  background-color: green;
+}
+.user {
+  width: 30px;
+  height: 30px;
+}
+.userIcon {
+  height: 25px;
+  width: 25px;
+}
+
+/* ======================== modal ========================= */
+.modal {
+  padding: 1.8rem 2.16rem .9rem;
+  width: 550px;
+  max-width: 1300px;
+  background: #fff;
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,.2);
+}
+
+
+/* ======================= pages ================== */
+/* ++++++++++++++++++ games ++++++++++++++++++ */
+.listItems {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.listItem {
+  width: 200px;
+  height: 300px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 4px;
+}
+.listItemTitle {
+  font-size: 12px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.listItemImgContainer {
+  width: 100%;
+}
+
+.listItemImg {
+  width: 100%;
+}
+
+.listItemDescription {
+  font-size: 10px;
+  text-align: justify;
+  margin: 10px 0;
+}
+
+.listItemPrice {
+  font-size: 12px;
+}
+
+.order {
+  position: absolute;
+  height: 50px;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 5px;
+}
+
+.listItemCart {
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+
+.listItemCartIMG {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.card{
+  min-width: 348px;
+  background: #edaf88;
+  
+}
+.card-info .money{
+  font-size:15px;
+  color:rgb(0, 0, 0) ;
+  }
+
+  .card-container{
+    padding: 15px;
+  
+  }
+  .card-info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+  }
+
+/* ========================== media ============================= */
+
+@media (min-width: 768px) {
+  /* ==================== header ============================= */
+  .header {
+    height: 40px;
+  }
+
+  /* ------------------ logo ------------------------ */
+  .logo {
+    height: 35px;
+    width: 80px;
+  }
+  .logoIcon {
+    position: absolute;
+    height: 25px;
+
+    /* ----------------- navigation ---------------------------- */
+  }
+  .navLink {
+    margin: 16px;
+    font-size: 14px;
+  }
+
+  /* --------------------- user ----------------------- */
+  .user {
+    width: 30px;
+    height: 30px;
+  }
+  .userIcon {
+    height: 21px;
+    width: 21px;
+  }
+}
+
+@media (min-width: 1024px) {
+}
